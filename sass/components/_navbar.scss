@@ -3,8 +3,8 @@
 
 .navbar {
   background-color: $primary-color;
-  flex-direction: column;
-  padding: 1rem;
+  flex-direction: row;
+  // padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,6 @@
     list-style: none;
     display: flex;
     align-items: center;
-
     li {
       margin: 10px;
 
@@ -22,7 +21,6 @@
         color: white;
         text-decoration: none;
         transition: color 0.3s;
-
         &:hover {
           color: lighten($primary-color, 20%);
         }
