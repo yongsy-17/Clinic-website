@@ -1,5 +1,10 @@
 @import'components/navbar';
 @import 'components/variable';
+@import'components/main';
+@import'components/container';
+@import'components/box-cards';
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,5 +15,4 @@
     font-family: $font-family;
     color: $text-color;
   }
-
 

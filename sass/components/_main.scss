@@ -1,0 +1,35 @@
+@import"./variable";
+
+.main{
+    background: url(/images/photo_2024-10-28_14-15-41.jpg);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#Plus-sign{
+    display: flex;
+    width: 20%;
+    height: 40vh;
+    margin-top: 10px;
+    margin-right: 70%;
+}
+.main h1{
+    font-size: 64px;
+    margin-top:-200px;
+    margin-right: 15%;
+}
+.tattle{
+    margin-left: 10px;
+}
+.tattle h2 {
+    font-size: 48px;
+}
+.tattle h5{
+    font-size: 36px;
+    margin-top: 20px;
+}
