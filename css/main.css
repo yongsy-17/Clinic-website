@@ -36,9 +36,9 @@
 }
 
 .logo > h1 {
-  font-size: 30px;
-  gap: 30px;
-  margin-left: 3%;
+  font-size: 28px;
+  gap: 20px;
+  margin-left: 2%;
 }
 
 .logo:hover {
@@ -98,7 +98,7 @@ span:hover {
   width: 20%;
   height: 40vh;
   margin-top: 10px;
-  margin-right: 70%;
+  margin-right: 74%;
 }
 
 .main h1 {
@@ -163,7 +163,7 @@ span:hover {
 
 .box-cards {
   background: rgb(255, 255, 255);
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   gap: 30px;
 }
@@ -228,10 +228,64 @@ span:hover {
 #box-card-p {
   font-size: 16px;
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 5px;
   padding: 30px;
   text-align: center;
-  line-height: 30px;
+  line-height: 25px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  height: 50vh;
+  flex-wrap: wrap;
+  line-height: 28px;
+}
+.footer .h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: black;
+}
+.footer p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.footer .footer-home, .footer .footer-service, .footer .footer-contant {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+  position: relative;
+  margin-left: 100px;
+}
+.footer .facebook {
+  gap: 10px;
+}
+.footer .address, .footer .email, .footer .phone, .footer .facebook {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 5px;
+}
+.footer .address img, .footer .email img, .footer .phone img, .footer .facebook img {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-contant > img {
+  display: flex;
+  width: 40%;
+}
+
+.save-year {
+  text-align: center;
+  padding: 20px;
+  background-color: F0FDEB;
+  color: black;
+  font-size: 20px;
 }
 
 * {
