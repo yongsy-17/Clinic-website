@@ -1,0 +1,111 @@
+.cardes-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.8;
+
+    .letter {
+        margin: 8px;
+
+        h2 {
+            font-size: 30px;
+            color: $paragrapcolor;
+            position: relative;
+            right: 180px;
+        }
+        p{
+            padding: 10px;
+            font-size: 18px;
+            position: relative;
+            bottom: 20px;
+            top: 3px;
+        }
+    }
+    .card-about {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .card {
+            width: 200px;
+            background-color: $secondprimary;
+            border: 1px solid $accbackgroun;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
+            img {
+                max-width: 100%; 
+                height: auto;
+                margin-top: 10px;
+            }
+    
+            h5 {
+                font-size: 20px;
+                color: $paragrapcolor;
+                margin: 8px 0;
+            }
+    
+            p {
+                font-size: 14px;
+                color:$paragrapcolor;
+                position: relative;
+                bottom: 10px;
+            }
+        }
+    }    
+}
+.cardes-btt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    .letter {
+        margin: 8px;
+
+        h2 {
+            font-size: 30px;
+            color: $paragrapcolor;
+            position: relative;
+            right: 50px;
+        }
+        p{
+            padding: 10px;
+            font-size: 18px;
+            position: relative;
+            bottom: 20px;
+            top: 4px;
+        }
+    }
+    .cards-about {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .cards {
+            width: 200px;
+            background-color: $secondprimary;
+            border: 1px solid $accbackgroun;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            img {
+                max-width: 100%; 
+                height: auto;
+            }
+    
+            h5 {
+                font-size: 20px;
+                color: $paragrapcolor;
+                margin: 8px 0 ;
+            }
+    
+            p {
+                font-size: 14px;
+                color:$paragrapcolor;
+                position: relative;
+                bottom: 10px;
+            }
+        }
+    }    
+}

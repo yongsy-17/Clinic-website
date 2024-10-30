@@ -1,0 +1,61 @@
+.btn-login {
+    button {
+        background-color:$primary; 
+        color: $secondprimary;
+        width: 80px;
+        padding:10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color:$primary;
+        }
+    }
+}
+.card-btn {
+    @include centered;
+    margin-bottom: 14px;
+    button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: $primary; 
+        color: $secondprimary;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+.cards-btn {
+    @include centered;
+    button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: $primary; 
+        color: $secondprimary;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+.cardes-btn {
+    @include centered;
+    button {
+        background-color: $primary; 
+        color: $secondprimary;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+

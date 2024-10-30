@@ -1,0 +1,165 @@
+@import"./group-mixin";
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondprimary;
+    padding: 2px;
+    text-align: center;
+    gap: 24px;
+    h1 {
+        font-size:40px;
+        color: $listcolor;
+        margin-top: 50px;
+    }
+    
+    p {
+        font-size: 18px;
+        color: $paragrapcolor;
+        position: relative;
+        bottom: 20px;
+    }
+    .main-container-top {
+        display: flex;
+        justify-content: center;
+        @include width;
+        border: 1px solid $accbackgroun;
+        border-radius: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        position: relative;
+        left: 30px;
+        gap: 20px;
+        .img-top {
+            flex: 0.6;
+            img {
+                width:100%;
+                height:100%;
+                border-top-left-radius:10px;
+                border-bottom-left-radius: 10px;
+            }
+        }
+    }
+    .main-container-button {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        @include width;
+        border: 1px solid $accbackgroun;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 10px;
+        position: relative;
+        left: 30px;
+        .img-btt {
+            flex: 0.8;
+            img {
+                width: 100%;
+                height:100%;
+                border-top-right-radius:10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+    .main-vdo {
+        @include centered;
+        gap: 19px; 
+        iframe {
+            width: 100%; 
+            max-width: 385px; 
+            height: 250px; 
+            border: none; 
+            border-radius: 8px; 
+        }
+    } 
+    .main-time {
+        @include width;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        position: relative;
+        left: 30px;
+        border-radius: 10px;
+        .time{
+            display: flex;
+            flex-direction: row;
+            @include centered;
+            flex: 1; 
+    
+            img {
+                max-width: 100px;
+                height: auto; 
+                margin-bottom: 0.5px;
+                position: relative;
+                top: 50px;
+            }
+    
+            h1 {
+                font-size: 30px;
+                color: $paragrapcolor;
+                position: relative;
+                top: 20px;
+            }
+        }
+        .times{
+            display: flex;
+            flex-direction: row;
+            @include centered;
+            flex: 1; 
+            position: relative;
+            right: 210px;
+            bottom: 50px;
+
+            p {
+                @include bold;
+                font-size: 40px;
+                color: $paragrapcolor;
+                position: relative;
+                left: 150px;
+                top: 10px;
+            }
+        }
+    }
+    .main-partner{
+        display: flex;
+        flex-direction: row;
+        @include width;
+        border-top: 2px solid $paragrapcolor;
+        position: relative;
+        left: 30px;
+        gap: 50px;
+        .main-people{
+            @include centered;
+            position: relative;
+            bottom: 150px;
+            left: 40px;
+            text-align: center;
+            .partner-people{
+                font-size: 60px;
+                color: $paragrapcolor;
+                @include bold;
+            }
+            .text{
+                font-size: 18px;
+                text-align: start;
+                margin: 0px 16px;
+            }
+        }
+    }
+    .main-insurance{
+        @include width;
+        position: relative;
+        bottom: 200px;
+        left: 30px;
+        h1{
+            position: relative;
+            bottom: 40px;
+            left: 20px;
+        }
+        img{
+            margin-bottom: 150px; 
+        }
+    }
+}
+
+            
+
