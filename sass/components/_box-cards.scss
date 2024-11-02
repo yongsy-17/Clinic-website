@@ -1,0 +1,97 @@
+@import'./variable';
+
+.box-cards{
+   background:$box-cards-bg;
+   height:120vh;
+   width: 100%;
+   gap: 30px;
+   #h1{
+    text-align: center;
+    }
+    #h1:hover{
+        color:$h1-hover-color;
+    }
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 20px;
+    padding: 50px;
+}
+.box-card-1{
+    background:$bg-color-white-bg;
+    width: 30%;
+    height: 80vh;
+    margin-top: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow:$shadow-bg;
+}
+// .box-card-2{
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     // height: 80vh;
+//     // margin-top: 20px;
+//     // margin: 20px;
+//     // border-radius: 30px;
+//     // box-shadow:$shadow-bg;
+// }
+.box-card{
+    background:$bg-color-white-bg;
+    flex-direction: row;
+    width: 30%;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow:$shadow-bg;
+    h1{
+        text-align: center;;
+        font-size: 30px;
+        // margin-top: 40px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+.card3{
+    
+    p{
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.images{
+    display: flex;
+    height: 39vh;
+    width: 100%;
+
+}
+.h1{
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+.h1:hover{
+    color:$h1-hover-name;
+    border-radius: 50px;
+}
+.box-card-p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 35px;
+}
+#box-card-p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 30px;
+    text-align: center;
+    line-height: 25px;
+}

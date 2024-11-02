@@ -1,10 +1,30 @@
+
+@import'./variable';
+ 
+
 .footer {
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     padding: 25px;
     background-color:$save-year-bg; 
     color:$listcolor; 
     height: 50vh;
+=======
+    padding: 20px;
+    background-color:$bg-footer-bg; 
+    color: $text-color; 
+    height: 50vh;
+    flex-wrap: wrap;
+    line-height: 28px;
+    .h3 {
+        font-size: 30px; 
+        margin-bottom: 10px; 
+        color: $text-color; 
+
+    background-color: $hoverprimary; 
+    color: $paragrapcolor; 
+>>>>>>> origin/master
     flex-wrap: wrap;
     line-height: 28px;
     h3 {
@@ -17,12 +37,21 @@
         font-size: 14px;
         margin: 5px 0; 
     }
+    }
     
     .footer-home, .footer-service, .footer-contant {
         flex: 1;
         min-width: 200px;
         margin-right: 20px;
+<<<<<<< HEAD
         margin-left: 100px;
+=======
+        position: relative;
+
+        margin-left: 100px;
+
+        left: 100px;
+>>>>>>> origin/master
     }
     .facebook{
         gap: 10px;
@@ -34,6 +63,10 @@
         margin: 5px;
         img {
             width: 25px; 
+<<<<<<< HEAD
+=======
+            width: 22px; 
+>>>>>>> origin/master
             height: auto; 
             margin-right: 10px; 
         }
@@ -51,6 +84,19 @@
     display: flex;
     width: 40%;
 }
+.footer-contant > img {
+    display: flex;
+    width: 40%;
+}
+.save-year {
+    text-align: center;
+    padding: 20px;
+    background-color:$save-year-bg; 
+    color: $text-color; 
+    font-size: 20px;
+    margin-top: -50px;
+}
+
 .save-year {
     text-align: center;
     padding: 20px;
