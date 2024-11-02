@@ -5,26 +5,10 @@
 .footer {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     padding: 25px;
     background-color:$save-year-bg; 
     color:$listcolor; 
     height: 50vh;
-=======
-    padding: 20px;
-    background-color:$bg-footer-bg; 
-    color: $text-color; 
-    height: 50vh;
-    flex-wrap: wrap;
-    line-height: 28px;
-    .h3 {
-        font-size: 30px; 
-        margin-bottom: 10px; 
-        color: $text-color; 
-
-    background-color: $hoverprimary; 
-    color: $paragrapcolor; 
->>>>>>> origin/master
     flex-wrap: wrap;
     line-height: 28px;
     h3 {
@@ -43,15 +27,7 @@
         flex: 1;
         min-width: 200px;
         margin-right: 20px;
-<<<<<<< HEAD
         margin-left: 100px;
-=======
-        position: relative;
-
-        margin-left: 100px;
-
-        left: 100px;
->>>>>>> origin/master
     }
     .facebook{
         gap: 10px;
@@ -63,10 +39,6 @@
         margin: 5px;
         img {
             width: 25px; 
-<<<<<<< HEAD
-=======
-            width: 22px; 
->>>>>>> origin/master
             height: auto; 
             margin-right: 10px; 
         }
@@ -79,7 +51,7 @@
             @include bold; 
         }
     }
-}
+
 .footer-contant > img {
     display: flex;
     width: 40%;
