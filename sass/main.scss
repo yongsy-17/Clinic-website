@@ -3,8 +3,11 @@
 @import "./components/button";
 @import "./components/main";
 @import "./components/cardes";
-@import "./mixins/group-mixin";
+@import "./components/group-mixin";
 @import "./components/footer";
+@import "./mixins/about-responsvie";
+@import "./mixins/service-responsvie";
+@import "./components/service";
 *{
     padding: 0;
     margin: 0;

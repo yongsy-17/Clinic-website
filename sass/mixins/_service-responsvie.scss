@@ -1,0 +1,84 @@
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        .navbar{
+            .logo{
+                img{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 3px;
+                }
+                h3{
+                    font-size: 18px;
+                }
+            }
+            ul{
+                gap: 50px;
+                li{
+                    a{
+                        font-size: 18px;
+                        margin: 0px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .card-blood,
+    .card-child,
+    .card-surgery,
+    .card-vaccines,
+    .card-wonman{
+        h3{
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+            
+        }
+    }
+    .footer{
+        .footer-home, .footer-service, .footer-contant{
+            margin-right: 10px;
+            margin-left: 30px;
+        }
+    }
+}
+@media(min-width:320px)and (max-width:480px){
+    body{
+        .navbar{
+            .logo{
+                h3{
+                    font-size: 14px;
+                }
+            }
+            ul{
+                gap: 6px;
+                li{
+                    a{
+                        font-size: 14px;
+                        margin: 0px 10px;
+                    }
+                }
+            }
+        }
+        section{
+            .service-child,
+            .service-blood,
+            .service-surgery,
+            .service-wonman,
+            .service-Vaccines{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .card-blood,
+                .card-child,
+                .card-surgery,
+                .card-vaccines,
+                .card-wonman{
+                    width: 300px;
+                    margin-left: 70px;
+                }
+            } 
+        }
+    }
+}

@@ -43,7 +43,7 @@
   gap: 10px;
 }
 .navbar .account img {
-  background: rgba(85, 85, 85, 0.1490196078);
+  background: rgba(51, 51, 51, 0.4549019608);
   width: 50px;
   height: 50px;
   margin: 10px;
@@ -116,6 +116,21 @@
   background-color: rgb(28, 28, 255);
 }
 
+.service-btn button {
+  background-color: rgb(5, 18, 164);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.service-btn button:hover {
+  background-color: #0000e8;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -140,7 +155,7 @@
   justify-content: center;
   width: 95%;
   height: 66vh;
-  border: 1px solid rgba(85, 85, 85, 0.1490196078);
+  border: 1px solid rgba(51, 51, 51, 0.4549019608);
   border-radius: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   position: relative;
@@ -162,7 +177,7 @@
   justify-content: center;
   width: 95%;
   height: 66vh;
-  border: 1px solid rgba(85, 85, 85, 0.1490196078);
+  border: 1px solid rgba(51, 51, 51, 0.4549019608);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
   position: relative;
@@ -301,8 +316,6 @@
 .cardes-top .letter h2 {
   font-size: 30px;
   color: rgba(65, 63, 63, 0.9411764706);
-  position: relative;
-  right: 180px;
 }
 .cardes-top .letter p {
   padding: 10px;
@@ -319,7 +332,7 @@
 .cardes-top .card-about .card {
   width: 200px;
   background-color: white;
-  border: 1px solid rgba(85, 85, 85, 0.1490196078);
+  border: 1px solid rgba(51, 51, 51, 0.4549019608);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -355,7 +368,6 @@
   font-size: 30px;
   color: rgba(65, 63, 63, 0.9411764706);
   position: relative;
-  right: 50px;
 }
 .cardes-btt .letter p {
   padding: 10px;
@@ -372,7 +384,7 @@
 .cardes-btt .cards-about .cards {
   width: 200px;
   background-color: white;
-  border: 1px solid rgba(85, 85, 85, 0.1490196078);
+  border: 1px solid rgba(51, 51, 51, 0.4549019608);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -395,18 +407,68 @@
   bottom: 10px;
 }
 
+.card-blood,
+.card-child,
+.card-surgery,
+.card-vaccines,
+.card-wonman {
+  width: 30%;
+  background-color: rgba(94, 159, 249, 0.046);
+  border: 0.2px solid rgba(51, 51, 51, 0.4549019608);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+}
+.card-blood img,
+.card-child img,
+.card-surgery img,
+.card-vaccines img,
+.card-wonman img {
+  max-width: 100%;
+  height: auto;
+}
+.card-blood h3,
+.card-child h3,
+.card-surgery h3,
+.card-vaccines h3,
+.card-wonman h3 {
+  font-size: 18px;
+  color: black;
+  margin: 8px 0;
+  transition: background-color 0.3s;
+}
+.card-blood h3:hover,
+.card-child h3:hover,
+.card-surgery h3:hover,
+.card-vaccines h3:hover,
+.card-wonman h3:hover {
+  color: #0000e8;
+}
+.card-blood p,
+.card-child p,
+.card-surgery p,
+.card-vaccines p,
+.card-wonman p {
+  font-size: 18px;
+  color: rgba(65, 63, 63, 0.9411764706);
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background-color: #E2F6F4;
-  color: rgba(65, 63, 63, 0.9411764706);
+  padding: 25px;
+  background-color: #F0FDEB;
+  color: black;
+  height: 50vh;
   flex-wrap: wrap;
+  line-height: 28px;
 }
 .footer h3 {
   font-size: 30px;
   margin-bottom: 10px;
-  color: rgba(65, 63, 63, 0.9411764706);
+  color: black;
 }
 .footer p {
   font-size: 14px;
@@ -416,8 +478,7 @@
   flex: 1;
   min-width: 200px;
   margin-right: 20px;
-  position: relative;
-  left: 100px;
+  margin-left: 100px;
 }
 .footer .facebook {
   gap: 10px;
@@ -429,9 +490,21 @@
   margin: 5px;
 }
 .footer .address img, .footer .email img, .footer .phone img, .footer .facebook img {
-  width: 22px;
+  width: 25px;
   height: auto;
   margin-right: 10px;
+}
+.footer span a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  font-weight: bold;
+}
+
+.footer-contant > img {
+  display: flex;
+  width: 40%;
 }
 
 .save-year {
@@ -440,6 +513,472 @@
   background-color: rgba(190, 224, 178, 0.6941176471);
   color: black;
   font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-container .main-container-top {
+    width: 94%;
+    height: 500px;
+  }
+  .main-container .main-container-top .img-top {
+    flex: 0.8;
+  }
+  .main-container .main-container-top .img-top img {
+    width: 100%;
+    height: 500px;
+  }
+  .main-container .cardes-top {
+    flex: 1;
+  }
+  .main-container .cardes-top .letter h2 {
+    font-size: 30px;
+    text-align: start;
+  }
+  .main-container .cardes-top .letter p {
+    font-size: 20px;
+    text-align: start;
+  }
+  .main-container .cardes-top .card-about {
+    margin-top: 90px;
+  }
+  .main-container .cardes-top .card-about .card {
+    width: 175px;
+    height: 230px;
+  }
+  .main-container .cardes-top .card-about .card p {
+    font-size: 14px;
+  }
+  .main-container .main-container-button {
+    width: 94%;
+    height: 500px;
+  }
+  .main-container .main-container-button .img-btt {
+    flex: 0.8;
+  }
+  .main-container .main-container-button .img-btt img {
+    width: 100%;
+    height: 500px;
+  }
+  .main-container .cardes-btt {
+    flex: 1.2;
+  }
+  .main-container .cardes-btt .letter h2 {
+    font-size: 30px;
+    text-align: start;
+  }
+  .main-container .cardes-btt .letter p {
+    font-size: 20px;
+    text-align: start;
+  }
+  .main-container .cardes-btt .cards-about {
+    margin-top: 90px;
+  }
+  .main-container .cardes-btt .cards-about .cards {
+    width: 175px;
+    height: 230px;
+  }
+  .main-container .cardes-btt .cards-about .cards h5 {
+    font-size: 18px;
+  }
+  .main-container .cardes-btt .cards-about .cards p {
+    font-size: 14px;
+  }
+  .main-container .cardes-btt .cards-about .cards .cards-btn {
+    margin-top: 17px;
+  }
+  .main-container .main-vdo iframe {
+    width: 98%;
+    max-width: 326px;
+    height: 250px;
+  }
+  .main-container .main-time {
+    height: 45vh;
+  }
+  .main-container .main-time .time img {
+    margin-bottom: 90px;
+  }
+  .main-container .main-time .time h1 {
+    margin-bottom: 90px;
+  }
+  .main-container .main-time .times {
+    margin-left: 190px;
+  }
+  .main-container .main-partner {
+    margin-right: 60px;
+  }
+  .main-container .main-partner .main-people {
+    margin-bottom: 300px;
+  }
+  .main-container .main-insurance img {
+    margin-top: 20px;
+  }
+  .footer {
+    height: 35vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+  body .navbar .logo img {
+    width: 45px;
+    height: 45px;
+    margin-right: 2px;
+  }
+  body .navbar .logo h3 {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  body .navbar ul {
+    gap: 5px;
+  }
+  body .navbar ul li a {
+    font-size: 14px;
+    margin: 5px;
+  }
+  body .navbar .account {
+    gap: 2px;
+  }
+  body .navbar .account img {
+    width: 45px;
+    height: 45px;
+    border-radius: 80%;
+  }
+  .main-container h1 {
+    font-size: 28px;
+  }
+  .main-container .main-container-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 4px;
+    top: 20px;
+  }
+  .main-container .main-container-top .img-top {
+    flex: 0.5;
+  }
+  .main-container .main-container-top .img-top img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .cardes-top {
+    flex: 0.5;
+  }
+  .main-container .cardes-top .letter h2 {
+    font-size: 24px;
+    text-align: start;
+  }
+  .main-container .cardes-top .letter p {
+    font-size: 18px;
+    text-align: start;
+  }
+  .main-container .cardes-top .card-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    gap: 0px;
+  }
+  .main-container .cardes-top .card-about .card {
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+  }
+  .main-container .cardes-top .card-about .card p {
+    font-size: 12px;
+  }
+  .main-container .main-container-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 4px;
+    top: 40px;
+  }
+  .main-container .main-container-button .img-btt {
+    flex: 0.2;
+  }
+  .main-container .main-container-button .img-btt img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .cardes-btt {
+    flex: 0.5;
+  }
+  .main-container .cardes-btt .letter h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+  .main-container .cardes-btt .letter p {
+    font-size: 18px;
+    text-align: start;
+  }
+  .main-container .cardes-btt .cards-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 0px;
+  }
+  .main-container .cardes-btt .cards-about .cards {
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+  }
+  .main-container .cardes-btt .cards-about .cards p {
+    font-size: 12px;
+  }
+  .main-container .main-vdo {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container .main-time {
+    width: 99%;
+    height: 100%;
+    position: relative;
+    left: 4px;
+  }
+  .main-container .main-time .time {
+    flex: 0.6;
+  }
+  .main-container .main-time .time img {
+    width: 25%;
+    height: 25%;
+    position: relative;
+    top: 0px;
+  }
+  .main-container .main-time .time h1 {
+    font-size: 24px;
+    position: relative;
+    top: 0px;
+    margin-bottom: 50px;
+  }
+  .main-container .main-time .times img {
+    width: 55%;
+    height: 55%;
+    position: relative;
+    left: 220px;
+    top: 30px;
+  }
+  .main-container .main-time .times p {
+    font-size: 28px;
+    margin-left: 80px;
+  }
+  .main-container .main-partner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 8px;
+    gap: 20px;
+  }
+  .main-container .main-partner .main-people {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+  }
+  .main-container .main-partner .main-people .partner-people {
+    font-size: 50px;
+    margin: 20px;
+  }
+  .main-container .main-insurance {
+    position: relative;
+    top: 100px;
+  }
+  .main-container .main-insurance h1 {
+    position: relative;
+    left: 0px;
+    right: 50px;
+  }
+  .main-container .main-insurance img {
+    width: 400px;
+    position: relative;
+    right: 20px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    flex-wrap: wrap;
+  }
+  .footer p {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 18px;
+  }
+  .footer .footer-home span, .footer .footer-service span, .footer .footer-contant span {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .navbar .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 3px;
+  }
+  body .navbar .logo h3 {
+    font-size: 18px;
+  }
+  body .navbar ul {
+    gap: 50px;
+  }
+  body .navbar ul li a {
+    font-size: 18px;
+    margin: 0px 20px;
+  }
+  .card-blood h3,
+  .card-child h3,
+  .card-surgery h3,
+  .card-vaccines h3,
+  .card-wonman h3 {
+    font-size: 18px;
+  }
+  .card-blood p,
+  .card-child p,
+  .card-surgery p,
+  .card-vaccines p,
+  .card-wonman p {
+    font-size: 14px;
+  }
+  .footer .footer-home, .footer .footer-service, .footer .footer-contant {
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .navbar .logo h3 {
+    font-size: 14px;
+  }
+  body .navbar ul {
+    gap: 6px;
+  }
+  body .navbar ul li a {
+    font-size: 14px;
+    margin: 0px 10px;
+  }
+  body section .service-child,
+  body section .service-blood,
+  body section .service-surgery,
+  body section .service-wonman,
+  body section .service-Vaccines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body section .service-child .card-blood,
+  body section .service-child .card-child,
+  body section .service-child .card-surgery,
+  body section .service-child .card-vaccines,
+  body section .service-child .card-wonman,
+  body section .service-blood .card-blood,
+  body section .service-blood .card-child,
+  body section .service-blood .card-surgery,
+  body section .service-blood .card-vaccines,
+  body section .service-blood .card-wonman,
+  body section .service-surgery .card-blood,
+  body section .service-surgery .card-child,
+  body section .service-surgery .card-surgery,
+  body section .service-surgery .card-vaccines,
+  body section .service-surgery .card-wonman,
+  body section .service-wonman .card-blood,
+  body section .service-wonman .card-child,
+  body section .service-wonman .card-surgery,
+  body section .service-wonman .card-vaccines,
+  body section .service-wonman .card-wonman,
+  body section .service-Vaccines .card-blood,
+  body section .service-Vaccines .card-child,
+  body section .service-Vaccines .card-surgery,
+  body section .service-Vaccines .card-vaccines,
+  body section .service-Vaccines .card-wonman {
+    width: 300px;
+    margin-left: 70px;
+  }
+}
+.navbar {
+  width: 100%;
+  background-color: #E2F6F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.navbar .logo h3 {
+  font-size: 24px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.navbar ul li a {
+  color: black;
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+  margin: 0px 60px;
+}
+.navbar ul li a:hover {
+  color: #0000e8;
+}
+.navbar .account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .account img {
+  background: rgba(51, 51, 51, 0.4549019608);
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+section h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+section p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+}
+section .service-child,
+section .service-blood,
+section .service-surgery,
+section .service-wonman,
+section .service-Vaccines {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 20px;
 }
 
 * {
