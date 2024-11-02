@@ -303,6 +303,7 @@ span:hover {
   background-color: F0FDEB;
   color: black;
   font-size: 20px;
+  margin-top: -50px;
 }
 
 .main {
@@ -483,6 +484,7 @@ span:hover {
   font-size: 16px;
   padding: 15px;
   text-align: center;
+  margin-top: 40px;
 }
 
 * {
