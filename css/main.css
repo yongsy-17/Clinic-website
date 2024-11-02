@@ -167,18 +167,26 @@ span:hover {
   width: 100%;
   gap: 30px;
 }
+.box-cards #h1 {
+  text-align: center;
+}
+.box-cards #h1:hover {
+  color: rgb(46, 44, 123);
+}
 
 .box {
   display: flex;
-  height: 80vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
   gap: 20px;
-  padding: 20px;
-  margin: 20px;
+  padding: 50px;
 }
 
-.box-card {
+.box-card-1 {
   background: white;
-  width: 100%;
+  width: 30%;
   height: 80vh;
   margin-top: 20px;
   margin: 20px;
@@ -186,18 +194,27 @@ span:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-#h1 {
-  display: flex;
+.box-card {
+  background: white;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  margin-top: 40px;
-  height: 20vh;
+  width: 30%;
+  height: 80vh;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.box-card h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.box-card p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-#h1:hover {
-  color: rgb(46, 44, 123);
+.card3 p {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .images {
@@ -286,6 +303,186 @@ span:hover {
   background-color: F0FDEB;
   color: black;
   font-size: 20px;
+}
+
+.main {
+  background: url(/images/photo_2024-10-28_14-15-41.jpg);
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#Plus-sign {
+  display: flex;
+  width: 20%;
+  height: 40vh;
+  margin-top: 10px;
+  margin-right: 74%;
+}
+
+.main h1 {
+  font-size: 64px;
+  margin-top: -200px;
+  margin-right: 15%;
+}
+
+.tattle {
+  margin-left: 10px;
+}
+
+.tattle h2 {
+  font-size: 48px;
+}
+
+.tattle h5 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    height: auto;
+  }
+  .navbar {
+    flex-direction: row;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .navbar ul {
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar ul img {
+    display: none;
+  }
+  #login {
+    font-size: 20px;
+  }
+  .logo {
+    width: 40%;
+    height: auto;
+    text-align: center;
+  }
+  .logo > h1 {
+    font-size: 24px;
+  }
+  button {
+    width: 20%;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+  }
+  #img {
+    width: 30%;
+    height: 8vh;
+  }
+  .main {
+    height: 70vh;
+    padding: 20px;
+    background-size: cover;
+    font-size: 18px;
+    text-align: center;
+  }
+  .main h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+  }
+  .container-right, .container-left {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .box-cards #h1 {
+    margin-top: 150px;
+  }
+  .box-cards .box .card1 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+  }
+  .box-cards .box .card1 img {
+    width: 50%;
+  }
+  .box-cards .box .card1 .box-card-butt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 80px;
+  }
+  .box-cards .box .card1 .box-card-butt h1 {
+    font-size: 30px;
+    line-height: 1.8;
+  }
+  .box-cards .box .card1 .box-card-butt p {
+    font-size: 24px;
+  }
+  .box-cards .box .card2, .box-cards .box .card3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 45vh;
+  }
+}
+.footer {
+  display: flex;
+  height: 70vh;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.footer .footer-home,
+.footer .footer-service,
+.footer .footer-contant {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  text-align: center;
+  margin-top: 40%;
+  text-align: center;
+}
+
+.footer ul {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  font-size: 16px;
+}
+
+.save-year {
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
 }
 
 * {

@@ -4,7 +4,7 @@
 @import'components/container';
 @import'components/box-cards';
 @import'components/footer';
-
+@import'./mixins/responsive';
 * {
     margin: 0;
     padding: 0;
@@ -15,4 +15,6 @@
     font-family: $font-family;
     color: $text-color;
   }
+
+
 
