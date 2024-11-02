@@ -1,3 +1,4 @@
+
 @import'components/navbar';
 @import 'components/variable';
 @import'components/main';
@@ -16,5 +17,21 @@
     color: $text-color;
   }
 
-
+@import "./components/variable";
+@import "./components/navbar";
+@import "./components/button";
+@import "./components/main";
+@import "./components/cardes";
+@import "./mixins/group-mixin";
+@import "./components/footer";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family: serif;
+    width: 100%;
+}
 
