@@ -1,3 +1,4 @@
+@import "./variable";
 .btn-login {
     button {
         background-color:$primary; 
@@ -56,6 +57,23 @@
         &:hover {
             background-color: $primary;
         }
+    }
+}
+.service-btn {
+    button {
+      background-color:$primary;
+      color: $secondprimary;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: $secondprimary;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primary, 10%);
+      }
     }
 }
 

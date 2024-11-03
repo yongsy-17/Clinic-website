@@ -1,28 +1,31 @@
+
+@import'./variable';
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: $hoverprimary; 
-    color: $paragrapcolor; 
+    padding: 25px;
+    background-color:$save-year-bg; 
+    color:$listcolor; 
+    height: 50vh;
     flex-wrap: wrap;
-    
+    line-height: 28px;
     h3 {
         font-size: 30px; 
         margin-bottom: 10px; 
-        color: $paragrapcolor; 
+        color:$listcolor; 
     }
     
     p {
         font-size: 14px;
         margin: 5px 0; 
     }
+    }
     
     .footer-home, .footer-service, .footer-contant {
         flex: 1;
         min-width: 200px;
         margin-right: 20px;
-        position: relative;
-        left: 100px;
+        margin-left: 100px;
     }
     .facebook{
         gap: 10px;
@@ -33,16 +36,42 @@
         margin-bottom: 10px;
         margin: 5px;
         img {
-            width: 22px; 
+            width: 25px; 
             height: auto; 
             margin-right: 10px; 
         }
     }
+    span{
+        a{
+            font-size: 20px;
+            color:$listcolor;
+            text-decoration: none; 
+            @include bold; 
+        }
+    }
+
+.footer-contant > img {
+    display: flex;
+    width: 40%;
+}
+.footer-contant > img {
+    display: flex;
+    width: 40%;
 }
 .save-year {
     text-align: center;
     padding: 20px;
+    background-color:$save-year-bg; 
+    color: $text-color; 
+    font-size: 20px;
+    margin-top: -50px;
+}
+
+.save-year {
+    text-align: center;
+    padding: 20px;
     background-color:$footerbackgroun; 
-    color: $listcolor; 
+    color:$listcolor; 
     font-size: 20px;
 }
+

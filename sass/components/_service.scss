@@ -1,0 +1,22 @@
+@import"./navbar";
+section{
+    width: 100%;
+    height: auto;
+    h2{
+        font-size: 30px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px
+    }
+    .service-child,
+    .service-blood,
+    .service-surgery,
+    .service-wonman,
+    .service-Vaccines{
+        @include styleservice;
+    }
+}

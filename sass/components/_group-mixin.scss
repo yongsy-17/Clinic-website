@@ -1,0 +1,31 @@
+@mixin centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bold{
+    display: flex;
+    font-weight: bold;
+}
+@mixin width{
+    width: 95%;
+    height: 66vh;
+}
+@mixin styleservice{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+@mixin cardstyle{
+    width: 30%;
+    background-color: $card-bg;
+    border: 0.2px solid $accbackgroun;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
