@@ -1,77 +1,89 @@
-
 @import'./variable';
 .footer {
     display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    background-color:$save-year-bg; 
-    color:$listcolor; 
-    height: 50vh;
-    flex-wrap: wrap;
-    line-height: 28px;
-    h3 {
-        font-size: 30px; 
-        margin-bottom: 10px; 
-        color:$listcolor; 
-    }
+    justify-content: center;
+    background-color:$hoverprimary ;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 2px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
     
-    p {
-        font-size: 14px;
-        margin: 5px 0; 
-    }
-    }
-    
-    .footer-home, .footer-service, .footer-contant {
-        flex: 1;
-        min-width: 200px;
-        margin-right: 20px;
-        margin-left: 100px;
-    }
-    .facebook{
-        gap: 10px;
-    }
-    .address, .email, .phone, .facebook {
+    .footer-top {
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        margin-bottom: 10px;
-        margin: 5px;
-        img {
-            width: 25px; 
-            height: auto; 
-            margin-right: 10px; 
+        text-align: center;
+        flex-wrap: wrap;
+        // padding-bottom: 10px;
+        gap: 20px;
+  
+      .footer-home, .footer-service, .footer-contant {
+        flex: 1;
+        max-width: 300px;
+        margin:10px;
+        text-align: left;
+        
+  
+        span {
+          display:flex;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom:10px;
+          color:$listcolor;
+  
+          a {
+            color: $listcolor;
+            text-decoration: none;
+            &:hover {
+              color:$primary;
+            }
+          }
         }
-    }
-    span{
-        a{
+  
+        p {
+            color: $listcolor;
             font-size: 20px;
-            color:$listcolor;
-            text-decoration: none; 
-            @include bold; 
         }
+  
+        .address, .email, .phone, .facebook {
+          display: flex;
+          align-items: center;
+          margin-top: 15px;
+  
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+          }
+  
+          p {
+            margin: 0;
+            line-height: 20px;
+          }
+        }
+  
+        .facebook {
+          img {
+            margin-right: 10px;
+          }
+  
+          p {
+            color: $listcolor;
+            margin-right: 10px;
+          }
+        }
+      }
     }
-
-.footer-contant > img {
-    display: flex;
-    width: 40%;
+  
+    .save-year {
+        background-color: $footerbackgroun;
+        color: $listcolor;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 20px;
+    }
 }
-.footer-contant > img {
-    display: flex;
-    width: 40%;
-}
-.save-year {
-    text-align: center;
-    padding: 20px;
-    background-color:$save-year-bg; 
-    color: $text-color; 
-    font-size: 20px;
-    margin-top: -50px;
-}
-
-.save-year {
-    text-align: center;
-    padding: 20px;
-    background-color:$footerbackgroun; 
-    color:$listcolor; 
-    font-size: 20px;
-}
-
+  

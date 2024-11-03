@@ -1,10 +1,10 @@
 @import'./variable';
 
 .box-cards{
-   background:$box-cards-bg;
-   height:120vh;
+   background:$secondprimary;
+   height:100%;
    width: 100%;
-   gap: 30px;
+   gap: 20px;
    #h1{
     text-align: center;
     }
@@ -18,34 +18,34 @@
     flex-wrap: wrap;
     height: fit-content;
     gap: 20px;
-    padding: 50px;
+    padding: 40px;
 }
 .box-card-1{
-    background:$bg-color-white-bg;
+    background:$secondprimary;
     width: 30%;
+    height: 80vh;
+    margin-top: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow:$shadow-bg;
+}
+.box-card-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 80vh;
     margin-top: 20px;
     margin: 20px;
     border-radius: 30px;
     box-shadow:$shadow-bg;
 }
-// .box-card-2{
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     // height: 80vh;
-//     // margin-top: 20px;
-//     // margin: 20px;
-//     // border-radius: 30px;
-//     // box-shadow:$shadow-bg;
-// }
 .box-card{
-    background:$bg-color-white-bg;
+    background:$secondprimary;
     flex-direction: row;
     width: 30%;
     height: 80vh;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow:$shadow-bg;
     h1{
         text-align: center;;
@@ -54,11 +54,10 @@
     }
     p{
         font-size: 16px;
-        line-height: 1.6;
+        line-height: 30px;
     }
 }
 .card3{
-    
     p{
         text-align: center;
         margin-top: 10px;
@@ -66,8 +65,7 @@
 }
 
 .images{
-    display: flex;
-    height: 39vh;
+    height: 50%;
     width: 100%;
 
 }
@@ -78,14 +76,14 @@
 }
 .h1:hover{
     color:$h1-hover-name;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .box-card-p{
     font-size: 16px;
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
-    line-height: 35px;
+    line-height: 30px;
 }
 #box-card-p{
     font-size: 16px;

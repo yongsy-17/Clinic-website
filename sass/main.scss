@@ -13,8 +13,9 @@
   }
   
   body {
-    font-family: $font-family;
-    color: $text-color;
+    margin: 0 auto;
+    font-family: serif;
+    width: 100%;
   }
 
 @import "./components/variable";
