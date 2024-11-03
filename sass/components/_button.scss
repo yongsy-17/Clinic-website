@@ -1,3 +1,4 @@
+@import "./variable";
 .btn-login {
     button {
         background-color:$primary; 
@@ -60,7 +61,7 @@
 }
 .service-btn {
     button {
-      background-color:$btn-bg;
+      background-color:$primary;
       color: $secondprimary;
       border: none;
       padding: 0.5rem 1rem;

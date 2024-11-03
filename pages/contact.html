@@ -9,59 +9,65 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <div id="logoes"><img src="../images/about/Logo.png" alt=""></div>
+            <div id="logoes"><img src="../images/contact/logo.png" alt=""></div>
             <h3>Mayo Clinic</h3>
         </div>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../index.html">ទំព័រដើម</a></li>
+            <li><a href="./about.html">អំពី</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li>
         </ul>
+        <div class="account">
+            <img src="../images/about/image 63.png" alt="">
+            <div class="btn-login"><button>Log in</button></div>
+        </div>
     </nav>
     <div class="main-contant">
-        <form action="">
+        <form action="#" >
             <div class="form-email">
                 <img src="" alt="">
                 <p>អ៊ីម៉ែលរបស់អ្នក</p>
             </div>
-            <div class="form-group">
-                <div class="form-name">
-                    <label for="name">ឈ្មោអតិថិជន:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-phone">
-                    <label for="name">លេខទូរស័ព្ទ:</label>
-                    <input type="text" id="phnoe" name="phnoe" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email">អ៊ីម៉ែល:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">សរសេរសារ:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
+            <label for="name">ឈ្មោអតិថិជន:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="birthdate">ថ្ងៃកំណើត</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        
+            <label for="gender">ភេទ</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        
+            <label for="email">អ៊ីម៉ែល:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">លេខទូរស័ព្ទ:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
             <button type="submit">ផ្ញើរសារ</button>
         </form>
-        <h1>ប្រអប់សម្រាប់សួរនិងផ្ដល់មតិដល់លោកគ្រអ្នកគ្រូពេទ្យ៖</h1>
-        <div class="messge">
-            <label for="email">សរសេរសារ</label>
-            <input type="message" id="message" name="message" required>
-            <button type="submit">ផ្ញើរសារ</button>
-        </div>
+    </div>
+    <h1>ប្រអប់សម្រាប់សួរនិងផ្ដល់មតិដល់លោកគ្រអ្នកគ្រូពេទ្យ៖</h1>
+    <div class="messge">
+        <label for="email">សរសេរសារ</label>
+        <input type="message" id="message" name="message" required>
+        <button type="submit">ផ្ញើរសារ</button>
     </div>
     <footer class="footer">
         <div class="footer-home">
-            <h3>Home Page</h3>
+            <span><a href="../index.html">ទំព័រដើម</a></span>
             <p>ជារៀងរាល់ឆ្នាំមានមនុស្សជាងមួយលាននាក់មក<br>គ្លីនិករបស់យើងដើម្បីថែទាំសុខភាព។<br>អ្នកជំនាញរបស់យើងគឺល្អបំផុតមួយ<br>ចំនួននៅក្នុងពិភពលោក។</p>
         </div>
         <div class="footer-service">
-            <h3>Service</h3>
+            <span><a href="./service.html">សេវាកម្ម</a></span>
             <p>សេវាកម្ម៖<br>-គ្លីនិកយើងខ្ញុំមានទទួលសេវាកម្ម<br>-ការថែទាំសុខភាព<br>-ត្រួតពិនិត្យជំងឺ<br>-សម្រាលកូន<br>-វះកាត់</p>
         </div>
         <div class="footer-contant">
-            <h3>Contant Us</h3>
+            <span><a href="./contact.html">ទំនាក់ទំនង</a></span>
             <div class="address">
                 <img src="../images/about/address.png" alt="">
                 <p>អាស័យដ្ឋានៈ​ ផ្លូវ ១២៣៤</p>
@@ -87,3 +93,4 @@
         <p>រក្សាសិទ្ធិឆ្នាំ ២០២០ រក្សាសិទ្ធិគ្រ​ប់យ៉ាង</p>
     </div>
 </body>
+</html>
