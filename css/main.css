@@ -1137,7 +1137,7 @@ body {
   background-color: rgb(28, 28, 255);
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 20px;
   font-size: white;
   border-radius: 4px;
   margin-top: 10px;
@@ -1587,7 +1587,7 @@ h1 {
 .card-vaccines,
 .card-wonman {
   width: 30%;
-  background-color: rgba(6, 6, 234, 0.518);
+  background-color: #E2F6F4;
   border: 0.2px solid rgba(51, 51, 51, 0.4549019608);
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -2027,12 +2027,20 @@ h1 {
     font-size: 18px;
     margin: 0px 20px;
   }
+  .card-blood,
+  .card-child,
+  .card-surgery,
+  .card-vaccines,
+  .card-wonman {
+    background-color: #E2F6F4;
+  }
   .card-blood h3,
   .card-child h3,
   .card-surgery h3,
   .card-vaccines h3,
   .card-wonman h3 {
     font-size: 18px;
+    margin: 0px 5px;
   }
   .card-blood p,
   .card-child p,
@@ -2040,6 +2048,13 @@ h1 {
   .card-vaccines p,
   .card-wonman p {
     font-size: 14px;
+  }
+  .card-blood button,
+  .card-child button,
+  .card-surgery button,
+  .card-vaccines button,
+  .card-wonman button {
+    width: 150px;
   }
   .footer .footer-home, .footer .footer-service, .footer .footer-contant {
     margin-right: 10px;
@@ -2093,6 +2108,7 @@ h1 {
   body section .service-Vaccines .card-wonman {
     width: 300px;
     margin-left: 70px;
+    background-color: #E2F6F4;
   }
 }
 .navbar {

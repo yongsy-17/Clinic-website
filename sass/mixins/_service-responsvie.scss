@@ -27,13 +27,18 @@
     .card-surgery,
     .card-vaccines,
     .card-wonman{
+        background-color:$hoverprimary;
         h3{
             font-size: 18px;
+            margin: 0px 5px;
         }
 
         p {
             font-size: 14px;
             
+        }
+        button{
+            width: 150px;
         }
     }
     .footer{
@@ -77,6 +82,7 @@
                 .card-wonman{
                     width: 300px;
                     margin-left: 70px;
+                    background-color: $hoverprimary;
                 }
             } 
         }
