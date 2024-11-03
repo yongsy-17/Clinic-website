@@ -1,6 +1,7 @@
 @import'./variable';
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color:$hoverprimary ;
     color: #fff;
