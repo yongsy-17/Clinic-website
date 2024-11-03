@@ -25,72 +25,83 @@
     <div class="main-contant">
         <form action="#" >
             <div class="form-email">
-                <img src="" alt="">
+                <img src="../images/contact/logo-email.png" alt="">
                 <p>អ៊ីម៉ែលរបស់អ្នក</p>
             </div>
-            <label for="name">ឈ្មោអតិថិជន:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="birthdate">ថ្ងៃកំណើត</label>
-            <input type="date" id="birthdate" name="birthdate" required>
-        
-            <label for="gender">ភេទ</label>
-            <select id="gender" name="gender" required>
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-        
-            <label for="email">អ៊ីម៉ែល:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="phone">លេខទូរស័ព្ទ:</label>
-            <input type="tel" id="phone" name="phone" required>
-        
-            <button type="submit">ផ្ញើរសារ</button>
+            <div class="name">
+                <label for="name">ឈ្មោអតិថិជន:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="date">
+                <label for="birthdate">ថ្ងៃកំណើត</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="gender">
+                <label for="gender">ភេទ</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-email">
+                <label for="email">អ៊ីម៉ែល:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-phone">
+                <label for="phone">លេខទូរស័ព្ទ:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="submit">
+                <button type="submit">ផ្ញើរសារ</button>
+            </div>
         </form>
     </div>
     <h1>ប្រអប់សម្រាប់សួរនិងផ្ដល់មតិដល់លោកគ្រអ្នកគ្រូពេទ្យ៖</h1>
     <div class="messge">
         <label for="email">សរសេរសារ</label>
         <input type="message" id="message" name="message" required>
-        <button type="submit">ផ្ញើរសារ</button>
+        <div class="btn-submit">
+            <button type="submit">ផ្ញើរសារ</button>
+        </div>
     </div>
     <footer class="footer">
-        <div class="footer-home">
-            <span><a href="../index.html">ទំព័រដើម</a></span>
-            <p>ជារៀងរាល់ឆ្នាំមានមនុស្សជាងមួយលាននាក់មក<br>គ្លីនិករបស់យើងដើម្បីថែទាំសុខភាព។<br>អ្នកជំនាញរបស់យើងគឺល្អបំផុតមួយ<br>ចំនួននៅក្នុងពិភពលោក។</p>
+        <div class="footer-top">
+            <div class="footer-home">
+                <span><a href="../index.html">ទំព័រដើម</a></span>
+                <p>ជារៀងរាល់ឆ្នាំមានមនុស្សជាងមួយលាននាក់មក<br>គ្លីនិករបស់យើងដើម្បីថែទាំសុខភាព។<br>អ្នកជំនាញរបស់យើងគឺល្អបំផុតមួយ<br>ចំនួននៅក្នុងពិភពលោក។</p>
+            </div>
+            <div class="footer-service">
+                <span><a href="./service.html">សេវាកម្ម</a></span>
+                <p>សេវាកម្ម៖<br>-គ្លីនិកយើងខ្ញុំមានទទួលសេវាកម្ម<br>-ការថែទាំសុខភាព<br>-ត្រួតពិនិត្យជំងឺ<br>-សម្រាលកូន<br>-វះកាត់</p>
+            </div>
+            <div class="footer-contant">
+                <span><a href="./contact.html">ទំនាក់ទំនង</a></span>
+                <div class="address">
+                    <img src="../images/about/address.png" alt="">
+                    <p>អាស័យដ្ឋានៈ​ ផ្លូវ ១២៣៤</p>
+                </div>
+                <div class="email">
+                    <img src="../images/about/email.png" alt="">
+                    <p>អ៊ីម៉ែល៖exam@urmail.com</p>
+                </div>
+                <h6>ហៅមកយើងឥឡូវនេះ៖</h6>
+                <div class="phone">
+                    <img src="../images/about/phone.png" alt="">
+                    <p>+៨៩៩-៥៥៥-៦៦៧៧</p>
+                </div>
+                <div class="facebook">
+                    <img src="../images/about/facebook.png" alt="">
+                    <p>Facebook</p>
+                    <img src="../images/about/telegram.png" alt="">
+                    <p>Telegram</p>
+                </div>
+            </div>
         </div>
-        <div class="footer-service">
-            <span><a href="./service.html">សេវាកម្ម</a></span>
-            <p>សេវាកម្ម៖<br>-គ្លីនិកយើងខ្ញុំមានទទួលសេវាកម្ម<br>-ការថែទាំសុខភាព<br>-ត្រួតពិនិត្យជំងឺ<br>-សម្រាលកូន<br>-វះកាត់</p>
-        </div>
-        <div class="footer-contant">
-            <span><a href="./contact.html">ទំនាក់ទំនង</a></span>
-            <div class="address">
-                <img src="../images/about/address.png" alt="">
-                <p>អាស័យដ្ឋានៈ​ ផ្លូវ ១២៣៤</p>
-            </div>
-            <div class="email">
-                <img src="../images/about/email.png" alt="">
-                <p>អ៊ីម៉ែល៖exam@urmail.com</p>
-            </div>
-            <p>ហៅមកយើងឥឡូវនេះ៖</p>
-            <div class="phone">
-                <img src="../images/about/phone.png" alt="">
-                <p>+៨៩៩-៥៥៥-៦៦៧៧</p>
-            </div>
-            <div class="facebook">
-                <img src="../images/about/facebook.png" alt="">
-                <p>Facebook</p>
-                <img src="../images/about/telegram.png" alt="">
-                <p>Telegram</p>
-            </div>
+        <div class="save-year">
+            <p>រក្សាសិទ្ធិឆ្នាំ ២០២០ រក្សាសិទ្ធិគ្រ​ប់យ៉ាង</p>
         </div>
     </footer>
-    <div class="save-year">
-        <p>រក្សាសិទ្ធិឆ្នាំ ២០២០ រក្សាសិទ្ធិគ្រ​ប់យ៉ាង</p>
-    </div>
 </body>
 </html>

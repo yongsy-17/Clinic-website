@@ -19,62 +19,70 @@
         // padding-bottom: 10px;
         gap: 20px;
   
-      .footer-home, .footer-service, .footer-contant {
-        flex: 1;
-        max-width: 300px;
-        margin:10px;
-        text-align: left;
-        
-  
-        span {
-          display:flex;
-          font-size: 20px;
-          font-weight: bold;
-          margin-bottom:10px;
-          color:$listcolor;
-  
-          a {
-            color: $listcolor;
-            text-decoration: none;
-            &:hover {
-              color:$primary;
-            }
-          }
-        }
-  
-        p {
-            color: $listcolor;
+        .footer-home, .footer-service, .footer-contant {
+            flex: 1;
+            max-width: 300px;
+            margin:10px;
+            text-align: left;
+            
+    
+            span {
+            display:flex;
             font-size: 20px;
+            font-weight: bold;
+            margin-bottom:10px;
+            color:$listcolor;
+    
+            a {
+                color: $listcolor;
+                text-decoration: none;
+                &:hover {
+                color:$primary;
+                }
+            }
+            }
+    
+            p {
+                color: $listcolor;
+                font-size: 20px;
+            }
+    
+            .address, .email, .phone, .facebook {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+    
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 20px;
+            }
+    
+            p {
+                margin: 0;
+                line-height: 20px;
+            }
+            }
+    
+            .facebook {
+            img {
+                margin-right: 10px;
+            }
+    
+            p {
+                color: $listcolor;
+                margin-right: 10px;
+            }
+            }
         }
-  
-        .address, .email, .phone, .facebook {
-          display: flex;
-          align-items: center;
-          margin-top: 15px;
-  
-          img {
-            width: 20px;
-            height: 20px;
-            margin-right: 20px;
-          }
-  
-          p {
-            margin: 0;
-            line-height: 20px;
-          }
+        .footer-contant{
+            h6{
+                @include bold;
+                font-size: 20px;
+                color: $listcolor;
+                margin: 10px;
+            }
         }
-  
-        .facebook {
-          img {
-            margin-right: 10px;
-          }
-  
-          p {
-            color: $listcolor;
-            margin-right: 10px;
-          }
-        }
-      }
     }
   
     .save-year {
