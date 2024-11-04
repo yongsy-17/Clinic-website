@@ -3,35 +3,23 @@
 .container{
     display: flex;
     background:$secondprimary;
-    height: 80vh;
-    padding: 30px;
+    width: 100%;
+    height: 50vh;
     gap: 20px;
+    .container-left{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-right{
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 30px;
+    }
 }
-.container-right{
-    display: flex;
-    width: 50%;
-    padding: 20px;
-    font-size: 34px;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 20px;
-}
-.container-right h6{
-    font-size: 20px;
-    margin-top: 20px;
-    line-height: 35px;
-}
-.container-right h3:hover{
-    color:$button-hover;
-}
-.container-left{
-    width: 50%;
-}
-#container-img{
-    height: 62vh;
-    width: 90%;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 22px;
-}
+

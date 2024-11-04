@@ -1,154 +1,87 @@
-@import '../components/main';
-
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        height: auto;
-    }
-    
-    .navbar {
-        flex-direction: row;
-        font-size: 18px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 0;
-    }
-    
-    .navbar ul {
-        flex-direction: row;
-        gap: 15px;
+    .main{
         width: 100%;
-        justify-content: center;
-    }
-
-    .navbar ul img { 
-        display: none;
-    }
-
-    #login {
-        font-size: 20px;
-    }
-
-    .logo {
-        width: 40%;
-        height: auto;
-        text-align: center;
-    }
-
-    .logo > h1 {
-        font-size: 24px;
-    }
-    button {
-        width: 20%;
-        font-size: 14px;
-        padding: 10px;
-        // margin: 10px auto;
-        text-align: center;
-    }
-    #img {
-        width: 30%;
-        height: 8vh;
-    }
-
-    .main {
-        height: 70vh;
-        padding: 20px;
-        background-size: cover;
-        font-size: 18px;
-        text-align: center;
-    }
-    
-    .main h1 {
-        font-size: 30px;
-        margin-top: 20px;
-    }
-
-    .container {
-        flex-direction: column;
-        width: 100%;
-        padding: 20px;
-        gap: 20px;
-        font-size: 18px;
-        align-items: center;
-    }
-    .container-right, .container-left {
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-    }
-    .box-cards {
-        #h1{
-            margin-top: 150px;
+        img{
+            flex: 0.5;
+            width: 10%;
         }
+        .title{
+            flex: 2;
+        }
+    }
+    .container{
+        .container-left{
+            #container-img{
+                width: 80%;
+                height: 50%;
+            }
+        }
+    }
+    .box-cards{
         .box{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: none;
+            margin: 0px 10px;
             .card1{
-                width: 100%;
-                height: fit-content;
-                display: flex;
-                align-items: start;
-                img{
-                    width: 50%;
+                width: 48.2%;
+                .imges{
+                    width: 80%;
+                    height: 30%;
                 }
-                .box-card-butt{
-                    width: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    padding-left: 10px;
-                    margin-top: 80px;
-                    h1{
-                        font-size: 30px;
-                        line-height: 1.8;
-                    }
-                    p{
-                        font-size: 24px;
-                    }
-                } 
             }
-         
-            .card2 , .card3{
-                display: flex;
-                flex-direction:column;
-                width: 50%;
-                height: 45vh;
-            }
-        } 
+        }
     }
 }
-    .footer {
-        display: flex;
-        height: 70vh;
-        flex-direction: row;
-        align-items: center;
-        padding: 20px;
-        text-align: center;
-        font-size: 16px;
-        flex-wrap: wrap;
+@media (min-width: 320px) and (max-width: 480px) {
+    .main{
+        width: 100%;
+        img{
+            position: relative;
+            bottom:200px;
+        }
+        .title{
+            h6{
+                font-size: 10px;
+            }
+            h2{
+                font-size: 10px;
+            }
+        }
     }
-
-    .footer .footer-home,
-    .footer .footer-service,
-    .footer .footer-contant  {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px 0;
-        text-align: center;
-        margin-top: 40%;
-        text-align: center;
+    .container{
+        .container-left{
+            #container-img{
+                width: 80%;
+                height: 50%;
+            }
+        }
+        .container-right{
+            h3{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            h6{
+                font-size: 14px;
+                text-align: start;
+            }
+        }
     }
-    .footer ul {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
+    .box-cards{
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: none;
+            margin: 0px 10px;
+            .card1{
+                width: 100%;
+                .imges{
+                    width: 80%;
+                    height: 30%;
+                }
+            }
+        }
     }
-    .footer ul li {
-        font-size: 16px;
-    }
-    .save-year {
-        font-size: 16px;
-        padding: 15px;
-        text-align: center;
-        margin-top: 40px;
-    }
+}
